@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">test-app-java</string>
+    <string name="txtButton">Ir a Lista</string>
+</resources>
