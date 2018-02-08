@@ -4,7 +4,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -25,11 +28,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         public TextView txtName, txtCreationDate, txtAuthorName;
+        public ImageView imgView;
         public ViewHolder(View v){
             super(v);
             txtName = (TextView) v.findViewById(R.id.nameMovie);
             txtCreationDate = (TextView) v.findViewById(R.id.creationDate);
             txtAuthorName = (TextView) v.findViewById(R.id.authorMovie);
+            imgView = (ImageView) v.findViewById(R.id.imgMovie);
         }
     }
 
@@ -46,6 +51,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         holder.txtName.setText(movie.getNameMovie());
         holder.txtAuthorName.setText(movie.getAuthorMovie());
         holder.txtCreationDate.setText(String.valueOf(movie.getCreationDate()));
+        //Glide.with(this).load("http://goo.gl/gEgYUd").into(imgView);
     }
 
     @Override

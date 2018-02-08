@@ -13,11 +13,13 @@ public class MovieBean implements Serializable{
     private String nameMovie;
     private Date creationDate;
     private String authorMovie;
+    private String image;
 
-    public MovieBean(String nameMovie, Date creationDate, String authorMovie){
+    public MovieBean(String nameMovie, Date creationDate, String authorMovie, String image){
         this.nameMovie = nameMovie;
         this.creationDate = creationDate;
         this.authorMovie = authorMovie;
+        this.setImage(image);
     }
 
     public int getIdMovie() {
@@ -50,5 +52,13 @@ public class MovieBean implements Serializable{
 
     public void setAuthorMovie(String authorMovie) {
         this.authorMovie = authorMovie;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

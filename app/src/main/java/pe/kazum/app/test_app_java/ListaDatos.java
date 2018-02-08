@@ -35,14 +35,23 @@ public class ListaDatos extends AppCompatActivity {
     }
 
     private void populateList() {
-        MovieBean movieBean = new MovieBean("Star Wars 1",new Date(),"Steven Spielberg");
+        MovieBean movieBean = new MovieBean("Star Wars 1",new Date(),"Steven Spielberg","");
         lstMovies.add(movieBean);
-        movieBean = new MovieBean("Star Wars 2",new Date(),"Steven Spielberg");
+        movieBean = new MovieBean("Star Wars 2",new Date(),"Steven Spielberg","");
         lstMovies.add(movieBean);
-        movieBean = new MovieBean("Star Wars 3",new Date(),"Steven Spielberg");
+        movieBean = new MovieBean("Star Wars 3",new Date(),"Steven Spielberg","");
         lstMovies.add(movieBean);
-        movieBean = new MovieBean("Star Wars 4",new Date(),"Steven Spielberg");
+        movieBean = new MovieBean("Star Wars 4",new Date(),"Steven Spielberg","");
         lstMovies.add(movieBean);
+        movieBean = new MovieBean("Star Wars 5",new Date(),"Steven Spielberg","");
+        lstMovies.add(movieBean);
+        movieBean = new MovieBean("Star Wars 6",new Date(),"Steven Spielberg","");
+        lstMovies.add(movieBean);
+        movieBean = new MovieBean("Star Wars 7",new Date(),"Steven Spielberg","");
+        lstMovies.add(movieBean);
+        movieBean = new MovieBean("Star Wars 8",new Date(),"Steven Spielberg","");
+        lstMovies.add(movieBean);
+
         movieAdapter.notifyDataSetChanged();
     }
 }
