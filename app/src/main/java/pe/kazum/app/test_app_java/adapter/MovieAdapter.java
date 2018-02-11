@@ -1,5 +1,6 @@
 package pe.kazum.app.test_app_java.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,18 +13,25 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import pe.kazum.app.test_app_java.R;
+import pe.kazum.app.test_app_java.adapter.event.ClickEvent;
 import pe.kazum.app.test_app_java.bean.MovieBean;
 
 /**
  * Created by jonat on 5/2/2018.
  */
 
-public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
+public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> implements RecyclerView.OnClickListener{
 
-    List<MovieBean> lstMovies;
+    private List<MovieBean> lstMovies;
+    private ClickEvent clickEvent;
 
     public MovieAdapter(List<MovieBean> lstMovies) {
         this.lstMovies = lstMovies;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

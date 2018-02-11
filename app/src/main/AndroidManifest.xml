@@ -17,7 +17,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListaDatos" />
-        <activity android:name=".movie_list_row"></activity>
+        <activity android:name=".movie_list_row" />
+        <activity android:name=".Maqueta">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
