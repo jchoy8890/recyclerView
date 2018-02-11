@@ -50,7 +50,6 @@ public class ListaDatos extends AppCompatActivity {
         lstMovies.add(movieBean);
         movieBean = new MovieBean("Star Wars 8",new Date(),"Steven Spielberg","");
         lstMovies.add(movieBean);
-
         movieAdapter.notifyDataSetChanged();
     }
 }

@@ -45,7 +45,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.bind(lstMovies.get(position), onItemClickListener);
-        //Glide.with(this).load("http://goo.gl/gEgYUd").into(imgView);
     }
 
     @Override
@@ -75,7 +74,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             imgView.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    //onItemClickListener.onItemClick(movieBean);
                     Toast.makeText(ctx, movieBean.getNameMovie(), Toast.LENGTH_LONG).show();
                 }
             });
