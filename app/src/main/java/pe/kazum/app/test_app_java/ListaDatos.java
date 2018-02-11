@@ -25,8 +25,7 @@ public class ListaDatos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_datos);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewMovies);
-
-        movieAdapter = new MovieAdapter(lstMovies);
+        movieAdapter = new MovieAdapter(this, lstMovies, null);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
