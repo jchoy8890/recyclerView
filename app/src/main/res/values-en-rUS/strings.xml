@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">test-app-java</string>
+    <string name="app_name">App Recycler View</string>
     <string name="txtButton">Go to the list</string>
 </resources>

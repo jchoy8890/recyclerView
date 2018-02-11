@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">test-app-java</string>
+    <string name="app_name">App Recycler View</string>
     <string name="txtButton">Ir a Lista</string>
 </resources>
